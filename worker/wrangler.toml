@@ -1,0 +1,10 @@
+name = "bg-remover-api"
+main = "index.ts"
+compatibility_date = "2024-01-01"
+
+[vars]
+# Set your Remove.bg API key as a secret using:
+# npx wrangler secret put REMOVE_BG_API_KEY
+
+# Optional: Rate limiting (requests per minute)
+# RATE_LIMIT = "60"

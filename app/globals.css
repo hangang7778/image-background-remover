@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-50 text-gray-900;
+  }
+}
+
+@layer components {
+  .upload-zone {
+    @apply border-2 border-dashed border-gray-300 rounded-2xl p-12 text-center cursor-pointer transition-all duration-200;
+  }
+  
+  .upload-zone:hover {
+    @apply border-primary bg-indigo-50;
+  }
+  
+  .upload-zone.dragging {
+    @apply border-primary bg-indigo-100 scale-105;
+  }
+  
+  .btn-primary {
+    @apply bg-primary hover:bg-indigo-600 text-white font-semibold py-3 px-8 rounded-xl transition-colors duration-200 shadow-lg shadow-indigo-500/30;
+  }
+  
+  .btn-secondary {
+    @apply bg-white hover:bg-gray-50 text-primary font-semibold py-3 px-8 rounded-xl border-2 border-primary transition-colors duration-200;
+  }
+}
